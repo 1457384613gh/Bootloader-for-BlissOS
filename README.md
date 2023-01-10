@@ -20,7 +20,8 @@ README.MD is to be updated, in the future.
 It's awkward that my E-mail cannot send private email to foreigners.
 
 So copy this letter and email Roderick W. Smith, rodsmith@rodsbooks.com, the developer of rEFInd.
-
+<details>
+  <summary> </summary>
 Dear Roderick W. Smith
 
 ---- I am a user, who loves to use rEFInd Boot Manager. I'm writing to give some issues.
@@ -37,5 +38,6 @@ Dear Roderick W. Smith
   
 ------------------------------------------------------------------------------------------- Sincerely yours,
 ------------------------------------------------------------------------------------------       Users
-                                                                  
+</details>
+
 If you who email him receive his reply, please copy his letter and paste on [Issues] here.
