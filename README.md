@@ -1,6 +1,8 @@
 # Bootloader-for-BlissOS
 This project is for testing.
 
+Download it from [Releases](https://github.com/1457384613gh/Bootloader-for-BlissOS/releases)!
+
 If it is critical, I will delete it.
 
 It is based on rEFInd Boot Manager.
