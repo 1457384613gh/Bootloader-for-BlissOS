@@ -19,7 +19,9 @@ README.MD is to be updated, in the future.
 ## Help
 It's awkward that my E-mail cannot send private email to foreigners.
 
-So copy this letter and email Roderick W. Smith, rodsmith@rodsbooks.com, the developer of rEFInd.
+So I need you help me email a person.
+
+Copy this letter and email Roderick W. Smith, rodsmith@rodsbooks.com, the developer of rEFInd.
 <details>
   <summary>Click to Unfold the letter </summary>
 Dear Roderick W. Smith
