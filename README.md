@@ -23,7 +23,7 @@ So I need you to help me email a person.
 
 Copy this letter and email Roderick W. Smith, rodsmith@rodsbooks.com, the developer of rEFInd.
 <details>
-  <summary>Click to Unfold the letter for copying</summary>
+  <summary>Click to Unfold the Letter for Copying</summary>
 Dear Roderick W. Smith
 
 ---- I am a user, who loves to use rEFInd Boot Manager. I'm writing to give some issues.
