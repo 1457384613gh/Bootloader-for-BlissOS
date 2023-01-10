@@ -1,9 +1,14 @@
 # Bootloader-for-BlissOS
 This project is for testing.
+
 If it is critical, I will delete it.
+
 It is based on rEFInd Boot Manager.
+
 You can preview .vhdx by using Hyper-V.
+
 All details around how to set are written into .conf files.
+
 README.MD is to be updated, in the future.
 
 ## Screenshots
@@ -13,9 +18,11 @@ README.MD is to be updated, in the future.
 
 ## Help
 It's awkward that my E-mail cannot send private email to foreigners.
+
 So copy this letter and email Roderick W. Smith, rodsmith@rodsbooks.com, the developer of rEFInd.
 
 Dear Roderick W. Smith
+
   I am a user, who loves to use rEFInd Boot Manager. I'm writing to give some issues.
   
   First and foremost, there should be an [EFI Video Driver] for rEFInd to support more resolutions. The UEFI resolution around Ironlake GPU is 1024x768 or lower. If the resolution of screen is 1366x768, the graphic interface will be stretched horizontally. There is a [CsmVideoDXE_x64.efi] prepared for Clover to set resolution of Clover as same as that of screen; There is a function called [ForceResolution] prepared for OpenCore to force to set resolution of OpenCore as same as that of screen; There are [renderer_direct_gop], [provide_console_gop] and so on prepared for RefindPlus to set resolution of RefindPlus as same as that of screen. If there is nothing around that prepared for rEFInd, it will come from behind.
