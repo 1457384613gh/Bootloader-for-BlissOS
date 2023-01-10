@@ -35,7 +35,7 @@ Dear Roderick W. Smith
   
 ---- I will appreciate it if you can give a reply.
   
-                                                              Sincerely yours,
-                                                                  Users
+------------------------------------------------------------------------------------------- Sincerely yours,
+------------------------------------------------------------------------------------------       Users
                                                                   
 If you who email him receive his reply, please copy his letter and paste on [Issues] here.
