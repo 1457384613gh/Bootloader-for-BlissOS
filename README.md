@@ -19,7 +19,7 @@ README.MD is to be updated, in the future.
 ## Help
 It's awkward that my E-mail cannot send private email to foreigners.
 
-So I need you help me email a person.
+So I need you to help me email a person.
 
 Copy this letter and email Roderick W. Smith, rodsmith@rodsbooks.com, the developer of rEFInd.
 <details>
