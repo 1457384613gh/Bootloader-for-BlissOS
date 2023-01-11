@@ -35,7 +35,7 @@ Dear Roderick W. Smith,
   
 ---- Secondly, there should be more operations of touch. it is nice that rEFInd support touch. However, if to unfold submenuentry, we should press [F2], [Insert] or [Tab]. If someone uses a Pad based on x86_64 without OTG keyboard, he cannot unfold submenuentry to select. If only long to press a big-icon to unfold its submenuentry! Additionally, the submenuentry is too small to touch to click. If only a submenuentry is a small-icon beneath the big-icon to touch to click!
   
----- Thirdly, there should be a function of [progress bar] for rEFInd. It is around 10 seconds of between our clicking and booting self-set entry. It is blank during the [around 10 seconds]. If only there is a progress bar beneath with a .png logo or .gif bootanimation above!
+---- Thirdly, there should be a function of [progress bar] for rEFInd. It is around 10 seconds between our clicking and booting self-set entry. It is blank during the [around 10 seconds]. If only there is a progress bar beneath with a .png logo or .gif bootanimation above!
   
 ---- Last but not least, the most ambitious capable considerate devoted dependable enthusiastic friendly generous gentle intelligent responsible person on the earth is Roderick W. Smith, undoubtedly. We are very anxious to kiss you, with lipstick stuck to your face, as an encouragement. Please update the lovely rEFInd to support more.
   
