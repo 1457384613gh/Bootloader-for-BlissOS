@@ -1,4 +1,4 @@
-# Bootloader-for-BlissOS
+# Bootloader for BlissOS
 This project is for testing.
 
 Download it from [Releases](https://github.com/1457384613gh/Bootloader-for-BlissOS/releases)!
