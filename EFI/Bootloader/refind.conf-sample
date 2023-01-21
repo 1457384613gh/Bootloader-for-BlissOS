@@ -616,14 +616,14 @@ enable_and_lock_vmx false
 # This entry includes Linux-specific boot options and specification
 # of an initial RAM disk. Note uses of Linux-style forward slashes.
 # Also note that a leading slash is optional in file specifications.
-menuentry Linux {
-    icon EFI/refind/icons/os_linux.png
-    volume 904404F8-B481-440C-A1E3-11A5A954E601
-    loader bzImage-3.3.0-rc7
-    initrd initrd-3.3.0.img
-    options "ro root=UUID=5f96cafa-e0a7-4057-b18f-fa709db5b837"
-    disabled
-}
+#menuentry Linux {
+#    icon EFI/refind/icons/os_linux.png
+#    volume 904404F8-B481-440C-A1E3-11A5A954E601
+#    loader bzImage-3.3.0-rc7
+#    initrd initrd-3.3.0.img
+#    options "ro root=UUID=5f96cafa-e0a7-4057-b18f-fa709db5b837"
+#    disabled
+#}
 
 # Below is a more complex Linux example, specifically for Arch Linux.
 # This example MUST be modified for your specific installation; if nothing
@@ -632,55 +632,55 @@ menuentry Linux {
 # may need to use manual boot stanzas when using fallback initrds or
 # multiple kernels with Arch. This example is modified from one in the Arch
 # wiki page on rEFInd (https://wiki.archlinux.org/index.php/rEFInd).
-menuentry "Arch Linux" {
-    icon     /EFI/refind/icons/os_arch.png
-    volume   "Arch Linux"
-    loader   /boot/vmlinuz-linux
-    initrd   /boot/initramfs-linux.img
-    options  "root=PARTUUID=5028fa50-0079-4c40-b240-abfaf28693ea rw add_efi_memmap"
-    submenuentry "Boot using fallback initramfs" {
-        initrd /boot/initramfs-linux-fallback.img
-    }
-    submenuentry "Boot to terminal" {
-        add_options "systemd.unit=multi-user.target"
-    }
-    disabled
-}
+#menuentry "Arch Linux" {
+#    icon     /EFI/refind/icons/os_arch.png
+#    volume   "Arch Linux"
+#    loader   /boot/vmlinuz-linux
+#    initrd   /boot/initramfs-linux.img
+#    options  "root=PARTUUID=5028fa50-0079-4c40-b240-abfaf28693ea rw add_efi_memmap"
+#    submenuentry "Boot using fallback initramfs" {
+#        initrd /boot/initramfs-linux-fallback.img
+#    }
+#    submenuentry "Boot to terminal" {
+#        add_options "systemd.unit=multi-user.target"
+#    }
+#    disabled
+#}
 
 # A sample entry for loading Ubuntu using its standard name for
 # its GRUB 2 boot loader. Note uses of Linux-style forward slashes
-menuentry Ubuntu {
-    loader /EFI/ubuntu/grubx64.efi
-    icon /EFI/refind/icons/os_linux.png
-    disabled
-}
+#menuentry Ubuntu {
+#    loader /EFI/ubuntu/grubx64.efi
+#    icon /EFI/refind/icons/os_linux.png
+#    disabled
+#}
 
 # A minimal ELILO entry, which probably offers nothing that
 # auto-detection can't accomplish.
-menuentry "ELILO" {
-    loader \EFI\elilo\elilo.efi
-    disabled
-}
+#menuentry "ELILO" {
+#    loader \EFI\elilo\elilo.efi
+#    disabled
+#}
 
 # Like the ELILO entry, this one offers nothing that auto-detection
 # can't do; but you might use it if you want to disable auto-detection
 # but still boot Windows....
-menuentry "Windows 7" {
-    loader \EFI\Microsoft\Boot\bootmgfw.efi
-    disabled
-}
+#menuentry "Windows 7" {
+#    loader \EFI\Microsoft\Boot\bootmgfw.efi
+#    disabled
+#}
 
 # EFI shells are programs just like boot loaders, and can be
 # launched in the same way. You can pass a shell the name of a
 # script that it's to run on the "options" line. The script
 # could initialize hardware and then launch an OS, or it could
 # do something entirely different.
-menuentry "Windows via shell script" {
-    icon \EFI\refind\icons\os_win.png
-    loader \EFI\tools\shell.efi
-    options "fs0:\EFI\tools\launch_windows.nsh"
-    disabled
-}
+#menuentry "Windows via shell script" {
+#    icon \EFI\refind\icons\os_win.png
+#    loader \EFI\tools\shell.efi
+#    options "fs0:\EFI\tools\launch_windows.nsh"
+#    disabled
+#}
 
 # MacOS is normally detected and run automatically; however,
 # if you want to do something unusual, a manual boot stanza may
@@ -688,12 +688,12 @@ menuentry "Windows via shell script" {
 # it may serve as a starting point. Note that you'll almost
 # certainly need to change the "volume" line for this example
 # to work.
-menuentry "My macOS" {
-    icon \EFI\refind\icons\os_mac.png
-    volume "macOS boot"
-    loader \System\Library\CoreServices\boot.efi
-    disabled
-}
+#menuentry "My macOS" {
+#    icon \EFI\refind\icons\os_mac.png
+#    volume "macOS boot"
+#    loader \System\Library\CoreServices\boot.efi
+#    disabled
+#}
 
 # The firmware_bootnum token takes a HEXADECIMAL value as an option
 # and sets that value using the EFI's BootNext variable and then
@@ -705,122 +705,145 @@ menuentry "My macOS" {
 # own boot manager. Booting using the firmware_bootnum option
 # produces the better resolution. Note that no loader option is
 # used in this type of configuration.
-menuentry "macOS via BootNext" {
-    icon /EFI/refind/icons/os_mac.png
-    firmware_bootnum 80
-    disabled
-}
+#menuentry "macOS via BootNext" {
+#    icon /EFI/refind/icons/os_mac.png
+#    firmware_bootnum 80
+#    disabled
+#}
 
 ###System.conf
 menuentry "System" {
 	icon /EFI/Bootloader/Settings/menuentry/System/blissos.png
 	volume "Bliss OS partition"
 	ostype Linux
-	#graphics on
+#	graphics on
 	loader /BlissOS/kernel
 	initrd /BlissOS/initrd.img
-	options "quiet HWC=drm_minigbm GRALLOC=minigbm root=/dev/ram0 androidboot.selinux=permissive SRC=/BlissOS DATA=userdata"
+	options "quiet HWC=drm_minigbm GRALLOC=minigbm root=/dev/ram0 androidboot.selinux=permissive SRC=/BlissOS DATA=userdata0"
+	submenuentry "Internal disks" {
+		options "quiet HWC=drm_minigbm GRALLOC=minigbm root=/dev/ram0 androidboot.selinux=permissive SRC=/BlissOS DATA=userdata0 INTERNAL_MOUNT=1"
+	}
 	submenuentry "Second Userdata" {
 		options "quiet HWC=drm_minigbm GRALLOC=minigbm root=/dev/ram0 androidboot.selinux=permissive SRC=/BlissOS DATA=userdata1"
 	}
 	submenuentry "Debug Mode" {
-		options "DEBUG=2 HWC=drm_minigbm GRALLOC=minigbm root=/dev/ram0 androidboot.selinux=permissive SRC=/BlissOS DATA=userdata"
+		options "DEBUG=2 HWC=drm_minigbm GRALLOC=minigbm root=/dev/ram0 androidboot.selinux=permissive SRC=/BlissOS DATA=userdata0"
 	}
 }
 
-menuentry "With AMD" {
+menuentry "AMD Radeon" {
 	icon /EFI/Bootloader/Settings/menuentry/System/AMD.png
 	volume "Bliss OS partition"
 	ostype Linux
-	#graphics on
+#	graphics on
 	loader /BlissOS/kernel
 	initrd /BlissOS/initrd.img
-	options "quiet HWC=drm_minigbm GRALLOC4_MINIGBM=1 root=/dev/ram0 androidboot.selinux=permissive SRC=/BlissOS DATA=userdata"
+	options "quiet HWC=drm_minigbm GRALLOC4_MINIGBM=1 root=/dev/ram0 androidboot.selinux=permissive SRC=/BlissOS DATA=userdata0"
+	submenuentry "Internal disks" {
+		options "quiet HWC=drm_minigbm GRALLOC4_MINIGBM=1 root=/dev/ram0 androidboot.selinux=permissive SRC=/BlissOS DATA=userdata0 INTERNAL_MOUNT=1"
+	}
 	submenuentry "Second Userdata" {
 		options "quiet HWC=drm_minigbm GRALLOC4_MINIGBM=1 root=/dev/ram0 androidboot.selinux=permissive SRC=/BlissOS DATA=userdata1"
 	}
 	submenuentry "Debug Mode" {
-		options "DEBUG=2 HWC=drm_minigbm GRALLOC4_MINIGBM=1 root=/dev/ram0 androidboot.selinux=permissive SRC=/BlissOS DATA=userdata"
+		options "DEBUG=2 HWC=drm_minigbm GRALLOC4_MINIGBM=1 root=/dev/ram0 androidboot.selinux=permissive SRC=/BlissOS DATA=userdata0"
 	}
+#	disabled
 }
 
 ###Magisk.conf
-menuentry "With Magisk" {
+menuentry "System with Magisk" {
 	icon /EFI/Bootloader/Settings/menuentry/Magisk/magisk.png
 	volume "Bliss OS partition"
 	ostype Linux
-	#graphics on
+#	graphics on
 	loader /BlissOS/kernel
 	initrd /BlissOS/initrd-magisk.img
-	options "quiet HWC=drm_minigbm GRALLOC=minigbm root=/dev/ram0 androidboot.selinux=permissive SRC=/BlissOS DATA=userdata"
-	submenuentry "Second Userdata" {
-		options "quiet HWC=drm_minigbm GRALLOC=minigbm root=/dev/ram0 androidboot.selinux=permissive SRC=/BlissOS DATA=userdata1"
+	options "quiet HWC=drm_minigbm GRALLOC=minigbm root=/dev/ram0 androidboot.selinux=permissive SRC=/BlissOS DATA=userdata1"
+	submenuentry "Internal disks" {
+		options "quiet HWC=drm_minigbm GRALLOC=minigbm root=/dev/ram0 androidboot.selinux=permissive SRC=/BlissOS DATA=userdata1 INTERNAL_MOUNT=1"
 	}
 	submenuentry "Debug Mode" {
-		options "DEBUG=2 HWC=drm_minigbm GRALLOC=minigbm root=/dev/ram0 androidboot.selinux=permissive SRC=/BlissOS DATA=userdata"
+		options "DEBUG=2 HWC=drm_minigbm GRALLOC=minigbm root=/dev/ram0 androidboot.selinux=permissive SRC=/BlissOS DATA=userdata1"
 	}
-	submenuentry "AMD Second Userdata" {
+	submenuentry "AMD Radeon" {
 		options "quiet HWC=drm_minigbm GRALLOC4_MINIGBM=1 root=/dev/ram0 androidboot.selinux=permissive SRC=/BlissOS DATA=userdata1"
+#		disabled
+	}
+	submenuentry "AMD and Mount" {
+		options "quiet HWC=drm_minigbm GRALLOC4_MINIGBM=1 root=/dev/ram0 androidboot.selinux=permissive SRC=/BlissOS DATA=userdata1 INTERNAL_MOUNT=1"
+#		disabled
 	}
 	submenuentry "AMD Debug" {
-		options "DEBUG=2 HWC=drm_minigbm GRALLOC4_MINIGBM=1 root=/dev/ram0 androidboot.selinux=permissive SRC=/BlissOS DATA=userdata"
+		options "DEBUG=2 HWC=drm_minigbm GRALLOC4_MINIGBM=1 root=/dev/ram0 androidboot.selinux=permissive SRC=/BlissOS DATA=userdata1"
+#		disabled
 	}
+#	disabled
 }
 
 ###Recovery.conf
 menuentry "Gearlock" {
 	icon /EFI/Bootloader/Settings/menuentry/Recovery/gearlock.png
 	volume "Bliss OS partition"
-	#loader /BlissOS/kernel
-	#initrd /BlissOS/initrd-gearlock.img #(inexistent, temporarily)
-	#options "GEARLOCK=1"
+#	loader /BlissOS/kernel
+#	initrd /BlissOS/initrd-gearlock.img #(inexistent, temporarily)
+#	options "GEARLOCK=1"
+#	disabled
 }
 
 menuentry "Twrp x86" {
 	icon /EFI/Bootloader/Settings/menuentry/Recovery/twrp.png
 	volume "Bliss OS partition"
-	#loader /BlissOS/kernel
-	#initrd /BlissOS/initrd-twrp.img #(inexistent, temporarily)
-	#options "TWRP=1"
+#	loader /BlissOS/kernel
+#	initrd /BlissOS/initrd-twrp.img #(inexistent, temporarily)
+#	options "TWRP=1"
+#	disabled
 }
 
 ###Fastboot.conf
 menuentry "Fastboot" {
 	icon /EFI/Bootloader/Settings/menuentry/Fastboot/fastboot.png
 	volume "Bliss PE partition"
-	#loader /kernel
-	#initrd /initrd.img
-	#options "INSTALL=1"
+#	loader /kernel
+#	initrd /initrd.img
+#	options "INSTALL=1"
+#	disabled
 }
 
 ###Back2refind.conf
 menuentry "Back2rEFInd" {
 	icon /EFI/Bootloader/Settings/menuentry/Back2refind/refind.png
 	loader /EFI/refind/refind_x64.efi
+#	disabled
 }
 
 ###Windows.conf
 menuentry "Windows 11" {
 	icon /EFI/Bootloader/Settings/menuentry/Windows/Win11.png
 	loader /EFI/Microsoft/Boot/bootmgfw.efi
+#	disabled
 }
 
-#menuentry "Windows 10" {
+menuentry "Windows 10" {
 	icon /EFI/Bootloader/Settings/menuentry/Windows/Win10.png
 	loader /EFI/Microsoft/Boot/bootmgfw.efi
+	disabled
 }
 
-#menuentry "Windows 8.1" {
+menuentry "Windows 8.1" {
 	icon /EFI/Bootloader/Settings/menuentry/Windows/Win8.png
 	loader /EFI/Microsoft/Boot/bootmgfw.efi
+	disabled
 }
 
-#menuentry "Windows 7" {
+menuentry "Windows 7" {
 	icon /EFI/Bootloader/Settings/menuentry/Windows/Win7.png
 	loader /EFI/Microsoft/Boot/bootmgfw.efi
+	disabled
 }
 
-#menuentry "Vista" {
+menuentry "Vista" {
 	icon /EFI/Bootloader/Settings/menuentry/Windows/Vista.png
 	loader /EFI/Microsoft/Boot/bootmgfw.efi
+	disabled
 }
