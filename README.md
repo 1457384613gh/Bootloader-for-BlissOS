@@ -14,9 +14,10 @@ All details around how to set are written into .conf files.
 README.MD is to be updated, in the future.
 
 ## Screenshots
-![X](https://user-images.githubusercontent.com/69227436/211485831-7794a880-5b93-4584-971d-9c6cf4a96e07.png)
-![Y](https://user-images.githubusercontent.com/69227436/211485858-7a372b2e-08e5-4c9f-92cf-44934fd676ea.png)
-![Z](https://user-images.githubusercontent.com/69227436/211485866-2018e2d6-4539-45db-8614-631a2149e8e3.png)
+![X](https://user-images.githubusercontent.com/69227436/213864596-c4c46d58-f94e-4380-a25c-eb22abac05fc.png)
+![Y](https://user-images.githubusercontent.com/69227436/213864597-fa814127-2353-4580-85fa-b131bd7c70e4.png)
+![Z](https://user-images.githubusercontent.com/69227436/213864598-cffdbdc1-dd01-4a4d-baa4-420d5c6f0ede.png)
+
 
 ## Help
 It's awkward that my E-mail cannot send private email to foreigners.
