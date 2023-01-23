@@ -1,6 +1,8 @@
 # Bootloader for BlissOS
 This project is for testing.
 
+Please use [GPT+UEFI], NOT [MBR+ESP].
+
 Download it from [Releases](https://github.com/1457384613gh/Bootloader-for-BlissOS/releases)!
 
 If it is critical, I will delete it.
