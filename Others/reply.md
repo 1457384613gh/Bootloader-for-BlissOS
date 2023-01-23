@@ -1,6 +1,7 @@
 Dear Smith,
 
 --I am very happy to receive your letter.
+
 --I have tried these [EFI video driver]-s. [efi_video.zip](https://github.com/dakanji/RefindPlus/files/10474713/efi_video.zip)
  - [CsmVideoDxe.efi] is from Clover;
  - [BiosVideo.efi] is from OpenCore.
