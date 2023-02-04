@@ -1,4 +1,6 @@
 # Bootloader for BlissOS
+The README.md is being written
+
 This project is for testing.
 
 Please use [GPT+UEFI], NOT [MBR+ESP].
@@ -14,39 +16,11 @@ You can preview .vhdx by using Hyper-V.
 All details around how to set are written into .conf files.
 
 README.MD is to be updated, in the future.
+## How to work
+![mmap_1675508599598](https://user-images.githubusercontent.com/69227436/216764419-266e049a-f429-4c94-84bd-b88dfce3b6e9.png)
 
 ## Screenshots
-![X](https://user-images.githubusercontent.com/69227436/213864596-c4c46d58-f94e-4380-a25c-eb22abac05fc.png)
-![Y](https://user-images.githubusercontent.com/69227436/213864597-fa814127-2353-4580-85fa-b131bd7c70e4.png)
-![Z](https://user-images.githubusercontent.com/69227436/213864598-cffdbdc1-dd01-4a4d-baa4-420d5c6f0ede.png)
-
-
-## Help
-It's awkward that my E-mail cannot send private email to foreigners.
-
-So I need you to help me email a person.
-
-Copy this letter and email Roderick W. Smith, rodsmith@rodsbooks.com, the developer of rEFInd.
-<details>
-  <summary>Click to Unfold the Letter for Copying</summary>
-  
-Dear Roderick W. Smith,
-
----- I am a user, who loves to use rEFInd Boot Manager. I'm writing to give some issues.
-  
----- First and foremost, there should be an [EFI Video Driver] for rEFInd to support more resolutions. The UEFI resolution around Ironlake GPU is 1024x768 or lower. If the resolution of screen is 1366x768, the graphic interface will be stretched horizontally. There is a [CsmVideoDXE_x64.efi] prepared for Clover to set resolution of Clover as same as that of screen; There is a function called [ForceResolution] prepared for OpenCore to force to set resolution of OpenCore as same as that of screen; There are [renderer_direct_gop], [provide_console_gop] and so on prepared for RefindPlus to set resolution of RefindPlus as same as that of screen. If there is nothing around that prepared for rEFInd, it will come from behind.
-  
----- Secondly, there should be more operations of touch. it is nice that rEFInd support touch. However, if to unfold submenuentry, we should press [F2], [Insert] or [Tab]. If someone uses a Pad based on x86_64 without OTG keyboard, he cannot unfold submenuentry to select. If only long to press a big-icon to unfold its submenuentry! Additionally, the submenuentry is too small to touch to click. If only a submenuentry is a small-icon beneath the big-icon to touch to click!
-  
----- Thirdly, there should be a function of [progress bar] for rEFInd. It is around 10 seconds between our clicking and booting self-set entry. It is blank during the [around 10 seconds]. If only there is a progress bar beneath with a .png logo or .gif bootanimation above!
-  
----- Last but not least, the most ambitious capable considerate devoted dependable enthusiastic friendly generous gentle intelligent responsible person on the earth is Roderick W. Smith, undoubtedly. We are very anxious to kiss you, with lipstick stuck to your face, as an encouragement. Please update the lovely rEFInd to support more.
-  
----- I will appreciate it if you can give a reply.
-  
-------------------------------------------------------------------------------------------- Sincerely yours,
-
------------------------------------------------------------------------------------------------ Users
-</details>
-
-If you who email him receive his reply, please copy his letter and paste on [Issues] here.
+![X](https://user-images.githubusercontent.com/69227436/216764309-a3d63cd8-6dcc-4e0a-bb8c-318be865df27.png)
+![Y](https://user-images.githubusercontent.com/69227436/216764310-0aa6fe94-60b7-4fac-ac71-a91f21efa5ab.png)
+![Z](https://user-images.githubusercontent.com/69227436/216764312-ce2ed9df-f2b3-4a14-9ba2-ac4af285049e.png)
+![w](https://user-images.githubusercontent.com/69227436/216764306-a861fe35-9eb7-4e78-81b9-3feff6cbbd06.png)
