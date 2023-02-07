@@ -17,7 +17,8 @@ All details around how to set are written into .conf files.
 
 README.MD is to be updated, in the future.
 ## How to work
-![mmap_1675508599598](https://user-images.githubusercontent.com/69227436/216764419-266e049a-f429-4c94-84bd-b88dfce3b6e9.png)
+![mmap_1675765187112](https://user-images.githubusercontent.com/69227436/217236340-6a266551-f056-4f6e-b843-fbfb6be2bd90.png)
+
 
 ## Screenshots
 ![X](https://user-images.githubusercontent.com/69227436/216764309-a3d63cd8-6dcc-4e0a-bb8c-318be865df27.png)
