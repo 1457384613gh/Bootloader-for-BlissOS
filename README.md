@@ -17,11 +17,11 @@ All details around how to set are written into .conf files.
 
 README.MD is to be updated, in the future.
 ## How to work
-![mmap_1675765187112](https://user-images.githubusercontent.com/69227436/217236340-6a266551-f056-4f6e-b843-fbfb6be2bd90.png)
+![Readme](https://user-images.githubusercontent.com/69227436/221778253-6a9cebf9-7188-4284-a28d-047ad31d7581.png)
 
 
 ## Screenshots
-![X](https://user-images.githubusercontent.com/69227436/216764309-a3d63cd8-6dcc-4e0a-bb8c-318be865df27.png)
-![Y](https://user-images.githubusercontent.com/69227436/216764310-0aa6fe94-60b7-4fac-ac71-a91f21efa5ab.png)
-![Z](https://user-images.githubusercontent.com/69227436/216764312-ce2ed9df-f2b3-4a14-9ba2-ac4af285049e.png)
-![w](https://user-images.githubusercontent.com/69227436/216764306-a861fe35-9eb7-4e78-81b9-3feff6cbbd06.png)
+![X](https://user-images.githubusercontent.com/69227436/221778146-67487c0c-ad7b-4bc2-aa60-5e23bab1b1ff.png)
+![Y](https://user-images.githubusercontent.com/69227436/221778171-f5b1bdb9-a9ae-4c1a-b0f4-8672162cd634.png)
+![Z](https://user-images.githubusercontent.com/69227436/221778199-f84f7170-3453-41c8-bd4e-e8724956fbd6.png)
+![w](https://user-images.githubusercontent.com/69227436/221778230-35e0265e-84d2-4fd7-b5f4-a189994c7354.png)
